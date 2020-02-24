@@ -24,11 +24,11 @@ public class ItemArrayAdapter extends ArrayAdapter<Player> {
         Player player = getItem(position);
 
         /*
-         * Check if an existing view is being reused, otherwise inflate the view
-         * setTag() and getTag() methods: We can use setTag() and getTag() methods
-         * to set and get custom objects as per our requirement. The setTag() method takes an
-         * argument of type Object, and getTag() returns an Object.
-         */
+        Check if an existing view is being reused, otherwise inflate the view.
+        setTag() and getTag() methods: We can use setTag() and getTag() methods
+        to set and get custom objects as per our requirement. The setTag() method takes an
+        argument of type Object, and getTag() returns an Object.
+        */
         ViewHolder viewHolder;
         if (convertView == null) {
             viewHolder = new ViewHolder();
