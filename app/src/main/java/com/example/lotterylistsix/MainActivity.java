@@ -3,6 +3,7 @@ package com.example.lotterylistsix;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         lvPlayer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), "Player " + position + " clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Player " + position + " clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }
